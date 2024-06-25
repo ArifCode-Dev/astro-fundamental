@@ -1,0 +1,17 @@
+.account{
+	background-color: rgb(27, 123, 207);
+	color: aliceblue;
+	text-align: center;
+	font-size: 1.5rem;
+	border-radius: 4rem;
+	box-shadow: 3rem 2rem 4rem black;
+	border: 1.3rem solid ;
+	margin-bottom: 5rem;
+}
+.Link{
+    background-color: aqua;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1.6rem;
+}

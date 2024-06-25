@@ -1,0 +1,51 @@
+---
+import Link from "../../components/Link.astro";
+import Layout from "../layout/layout.astro";
+
+const webPage = "HomePage";
+
+function account(username, email)
+{
+	this.username = username;
+	this.email = email;
+}
+
+let myAccount = new account("ARIF", "email.com");
+
+const title = webPage + ' | ' + myAccount.username; 
+
+---
+
+<Layout title={title} >
+	<div class="link"></div>
+	<div class="account">
+		<p>Your username is : {myAccount.username}</p>
+		<p>Your email is : {myAccount.email}</p>
+	</div>
+	<div class="divHover">
+		Diamond gratis!
+	</div>
+	<Link link="/about" cssClass="Link" content="About"
+</Layout>
+
+<style lang="scss">
+.divHover{
+    background-color: cadetblue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 24px;
+    width: 50%;
+    height: auto;
+    &:hover{
+        background-color: brown;
+    }
+}
+</style>
+
+<script>
+    const link = document.querySelector(".link");
+	link.textContent = "Welcome To Testing Page!"
+
+	console.log("Testing for dev..")
+</script>
